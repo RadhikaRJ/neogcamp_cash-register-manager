@@ -84,7 +84,7 @@ var header_row= header.insertRow(0);
 var header_cell1= header_row.insertCell(0);
 header_cell1.innerHTML="<b>Denomination</b>";
 var header_cell2 = header_row.insertCell(1);
-header_cell2.innerHTML = "<b>Minimum Number of notes required</b>" 
+header_cell2.innerHTML = "<b>Minimum Notes Required</b>" 
 
 //creating cells
 for(var i=0;i<length;i++){

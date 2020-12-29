@@ -1,12 +1,29 @@
 
-table{
 
+.main-container{
+ padding: 5% 5% 5% 20%;
+}
+table{
+border-collapse: collapse;
 table-layout:fixed;
 border-spacing: 0.5rem;
 
 text-align: left;
 }
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit
+}
 
 td,th{
     padding: 0.5rem;
+}
+tbody  tr:hover{
+    background-color: aliceblue;
 }
