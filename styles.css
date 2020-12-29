@@ -1,13 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
-    --primary-color: #E6D5EB;
-    --secondary-color: white;
+    --primary-color: #F4F2EB;
+    --secondary-color: #3F5E98;
     --heading-color: #701691;
-    --text-color: #9555af;
+    --text-color:#FFDB15 ;
   
-    --btn-background-color:#B482C4;
-    --btn-text-color:white;
+    --btn-background-color:#E4021B;
+    --btn-text-color:#FFDB15;
 
 }
 
@@ -15,10 +16,15 @@ body {
     display:flex;
     background-color: var(--primary-color);
     padding:1%;
-    
+    color:var(--text-color);
     font-family: 'Lobster', cursive;
-}
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000;
 
+}
+h1{
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000;
+    color:;
+}
 .main-container{
  padding: 5% 5% 5% 5%;
  background-color: var(--secondary-color);
@@ -47,9 +53,11 @@ thead{
 
 td,th{
     padding: 0.5rem;
+    font-family: 'Roboto', sans-serif;
 }
 tbody  tr:hover{
     background-color: aliceblue;
+   
 }
 
 #btn{
@@ -68,15 +76,15 @@ tbody  tr:hover{
 }
 
 #btn:hover{
-    color: var(--heading-color);
+    color: var(--text-color);
     border-color: currentColor;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 #btn:focus{
     outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
-        0 0 0 1.5px rgba(255, 105, 180, 0.5);
+    box-shadow: 0 0 0 3px rgba(47, 2, 77, 0.5),
+        0 0 0 1.5px rgba(46, 2, 46, 0.5);
 }
 
 #cash,#cashlabel{

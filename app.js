@@ -9,7 +9,7 @@ function clickHandler() {
     var outputDiv = document.getElementById("output1"); //get reference of output div by id
     outputDiv.innerHTML = ""; // (without user refreshing the screen, instead of updating, another table is appended. This fixes that issue.)
     outputref.innerHTML="";
-    
+
     var billAmt = document.getElementById('bill').value;    
     var cashAmt = document.getElementById('cash').value;
 
@@ -97,11 +97,13 @@ function clickHandler() {
 
         //creating cells
         for (var i = 0; i < length; i++) {
+            
             //create ith table row
             var row = document.createElement("tr");
 
             //we have 2 columns: denomination & count
             for (var j = 0; j < 2; j++) {
+                if(denom_dict[keys[i]]!=0){
                 if (j == 0) {
                     var cell1 = document.createElement("td");
                     var cellText1 = document.createTextNode(keys[i]);
@@ -115,6 +117,7 @@ function clickHandler() {
                     row.appendChild(cell2);
                 }
             }
+        }
 
             //add this row to table body
             tb_body.appendChild(row);
