@@ -75,3 +75,9 @@ tbody  tr:hover{
     box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
         0 0 0 1.5px rgba(255, 105, 180, 0.5);
 }
+
+#cash,#cashlabel{
+    visibility: hidden;
+}
+
+

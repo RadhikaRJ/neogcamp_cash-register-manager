@@ -9,7 +9,8 @@ function clickHandler() {
     var outputDiv = document.getElementById("output1"); //get reference of output div by id
     outputDiv.innerHTML = ""; // (without user refreshing the screen, instead of updating, another table is appended. This fixes that issue.)
     outputref.innerHTML="";
-    var billAmt = document.getElementById('bill').value;
+    
+    var billAmt = document.getElementById('bill').value;    
     var cashAmt = document.getElementById('cash').value;
 
     if (Number(cashAmt) < Number(billAmt)) {
