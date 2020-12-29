@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 :root {
     --primary-color: #F4F2EB;
     --secondary-color: #3F5E98;
@@ -17,13 +16,13 @@ body {
     background-color: var(--primary-color);
     padding:1%;
     color:var(--text-color);
-    font-family: 'Lobster', cursive;
+    font-family: 'Libre Baskerville', serif;
     text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000;
 
 }
 h1{
     text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000;
-    color:;
+   
 }
 .main-container{
  padding: 5% 5% 5% 5%;
@@ -37,37 +36,47 @@ table{
 border-collapse: collapse;
 table-layout:fixed;
 border-spacing: 0.5rem;
+border-color: var(--btn-background-color);
+background-color:var(--primary-color);
 
 text-align: left;
 }
 tbody{
     display: table-row-group;
     vertical-align: middle;
-    border-color: inherit;
+    border-color: var(--btn-background-color);
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff;
+    color: var(--secondary-color);
+    background-color:var(--text-color);
 }
 thead{
     display: table-header-group;
     vertical-align: middle;
-    border-color: inherit
+    border-color: inherit;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff;
+    background-color:var(--text-color);
 }
 
 td,th{
     padding: 0.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Baskerville', serif;
 }
 tbody  tr:hover{
     background-color: aliceblue;
+    color: var(--btn-background-color);
    
 }
 
 #btn{
     border: solid 1px transparent;
     border-radius: 4px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Libre Baskerville', serif;
     margin: 2px 0;
     padding: 0.5em 1em;
     color: var(--btn-text-color);
     background-color: var(--btn-background-color);
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000;
 }
 
 #btn:active{

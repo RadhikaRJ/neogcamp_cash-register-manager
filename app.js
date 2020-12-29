@@ -103,7 +103,7 @@ function clickHandler() {
 
             //we have 2 columns: denomination & count
             for (var j = 0; j < 2; j++) {
-                if(denom_dict[keys[i]]!=0){
+                if(denom_dict[keys[i]]!=0){// show only required table columns in output table
                 if (j == 0) {
                     var cell1 = document.createElement("td");
                     var cellText1 = document.createTextNode(keys[i]);
