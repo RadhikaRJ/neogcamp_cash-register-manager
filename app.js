@@ -75,7 +75,7 @@ console.log("keys: "+keys);
 var length=keys.length;
 
 var outputDiv = document.getElementById("output1"); //get reference of output div by id
-
+outputDiv.innerHTML=""; // (without user refreshing the screen, instead of updating, another table is appended. This fixes that issue.)
 var tb = document.createElement("table");
 var tb_body = document.createElement("tbody");
 

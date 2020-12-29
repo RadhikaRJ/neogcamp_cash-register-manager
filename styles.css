@@ -58,3 +58,20 @@ tbody  tr:hover{
     color: var(--btn-text-color);
     background-color: var(--btn-background-color);
 }
+
+#btn:active{
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+#btn:hover{
+    color: var(--heading-color);
+    border-color: currentColor;
+    background-color: var(--secondary-color);
+}
+
+#btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+        0 0 0 1.5px rgba(255, 105, 180, 0.5);
+}
