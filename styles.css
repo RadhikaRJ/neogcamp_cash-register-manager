@@ -1,7 +1,28 @@
 
 
+:root {
+    --primary-color: #E6D5EB;
+    --secondary-color: white;
+    --heading-color: #701691;
+    --text-color: #9555af;
+  
+    --btn-background-color:#B482C4;
+    --btn-text-color:white;
+
+}
+
+body {
+    display:flex;
+    background-color: var(--primary-color);
+    padding:1%;
+   
+}
+
 .main-container{
- padding: 5% 5% 5% 20%;
+ padding: 5% 5% 5% 5%;
+ background-color: var(--secondary-color);
+ align-items: center;
+   
 }
 table{
 border-collapse: collapse;
@@ -26,4 +47,14 @@ td,th{
 }
 tbody  tr:hover{
     background-color: aliceblue;
+}
+
+#btn{
+    border: solid 1px transparent;
+    border-radius: 4px;
+    
+    margin: 2px 0;
+    padding: 0.5em 1em;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
 }
